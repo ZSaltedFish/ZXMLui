@@ -22,17 +22,20 @@ namespace ZKnight.HTMLui
         {
             _objCallBack.Add(data, callBack);
             EditorButton btn = NodeFactoryXML.CreateEditorControl<EditorButton>();
-            btn.OnBtnClick = (curBtn) => { SetParent(null); _objCallBack[curBtn.Content](curBtn.Content); };
+            btn.OnBtnClick += Btn_OnBtnClick;
             btn.SetParent(this);
             btn.Size = BTN_SIZE;
             btn.Content = data;
             btn.LocalPosition = new Vector2(0, BTN_SIZE.y * _buttons.Count);
 
-            btn.Style = "Button";
-            btn.DefaultStyle = true;
-
             _buttons.Add(data, btn);
             ReCalu();
+        }
+
+        private void Btn_OnBtnClick(EditorButton curBtn)
+        {
+            SetParent(null); 
+            _objCallBack[curBtn.Content](curBtn.Content);
         }
 
         public void Remove(object data)

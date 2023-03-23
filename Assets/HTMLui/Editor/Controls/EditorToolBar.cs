@@ -20,9 +20,8 @@ namespace ZKnight.HTMLui
         {
             EditorButton btn = NodeFactoryXML.CreateEditorControl<EditorButton>();
             btn.Content = name;
-            btn.DefaultStyle = true;
             btn.Style = EditorStyles.toolbarDropDown;
-            btn.OnBtnClick = OnSelectBtnClick;
+            btn.OnBtnClick += OnSelectBtnClick;
             btn.Size = new Vector2(100, Size.y);
             _name2Context.Add(btn, pop);
             HorList.AddItem(btn);
