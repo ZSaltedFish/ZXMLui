@@ -37,7 +37,6 @@ namespace ZKnight.UnityXMLui
             {
                 e.Use();
             });
-            InitStyle();
         }
 
         private void OnRectChange(EditorControl obj, Rect local)
