@@ -6,13 +6,10 @@ namespace ZKnight.HTMLui
 {
     public class EditorButton : EditorControl
     {
-        public bool DefaultStyle = false;
         private Texture2D _bg;
         private Rect _localSize;
 
-        public Action<EditorButton> OnBtnClick;
-
-        private GUIStyle _style;
+        public event Action<EditorButton> OnBtnClick;
 
         private FontStyle _fontStyle = FontStyle.Normal;
         private bool _richText = true;
@@ -35,9 +32,7 @@ namespace ZKnight.HTMLui
         {
             _localSize = new Rect(Vector2.zero, Size);
             OnSizeChange.Add(OnRectChange);
-            _bg = AssetDatabase.LoadAssetAtPath<Texture2D>("Assets/Editor/Resources/NodeSelectBtn.png");
-            _hover = AssetDatabase.LoadAssetAtPath<Texture2D>("Assets/Editor/Resources/NodeSelectBtnHover.png");
-            _onDown = AssetDatabase.LoadAssetAtPath<Texture2D>("Assets/Editor/Resources/NodeSelectBtnDown.png");
+            Style = "Button";
             OnMouseClick.Add((c, e) =>
             {
                 e.Use();
@@ -52,8 +47,7 @@ namespace ZKnight.HTMLui
 
         protected override void Draw()
         {
-            GUIStyle style = DefaultStyle ? Style : _style;
-            if (GUI.Button(_localSize, Content?.ToString(), style))
+            if (GUI.Button(_localSize, Content?.ToString(), Style))
             {
                 OnBtnClick?.Invoke(this);
             }
@@ -83,7 +77,7 @@ namespace ZKnight.HTMLui
                 background = _onDown,
                 textColor = Color.gray
             };
-            _style = style;
+            Style = style;
         }
     }
 }
