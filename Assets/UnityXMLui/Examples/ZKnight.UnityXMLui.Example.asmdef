@@ -1,0 +1,16 @@
+{
+    "name": "ZKnight.UnityXMLui.Example",
+    "rootNamespace": "",
+    "references": [
+        "GUID:88f8c76dd4940a948a9a2aad1862ea58"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
