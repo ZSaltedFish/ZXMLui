@@ -139,7 +139,9 @@
       "version": "file:ZXMLui",
       "depth": 0,
       "source": "embedded",
-      "dependencies": {}
+      "dependencies": {
+        "com.zknight.zxmlui": ""
+      }
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",
