@@ -1,4 +1,4 @@
 ﻿<root>
-  <ZKnight.ZXMLui.EditorButton Size="180, 30" LocalPosition="20, 60" OnBtnClick="ClickBtn_OnBtnClick" Content="Show Log"/>
-  <ZKnight.ZXMLui.EditorText Size="180, 30" LocalPosition="20, 20" Content="Input somting here"/>
+  <ZKnight.ZXMLui.EditorButton Name="ClickBtn" Size="180, 30" LocalPosition="20, 60" OnBtnClick="ClickBtn_OnBtnClick" Content="Show Log"/>
+  <ZKnight.ZXMLui.EditorText Name="TextInput" Size="180, 30" LocalPosition="20, 20" Content="Input somting here"/>
 </root>

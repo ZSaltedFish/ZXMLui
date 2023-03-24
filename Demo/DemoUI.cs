@@ -10,12 +10,12 @@ namespace ZKnight.ZXMLui
         public EditorText TextInput;
         public EditorButton ClickBtn;
         
-        public void OnBtnClick(EditorButton e)
+        public void OnBtnClick(EditorControl e)
         {
             Debug.Log(TextInput.Content);
         }
 
-        public void ClickBtn_OnBtnClick(EditorButton e)
+        public void ClickBtn_OnBtnClick(EditorControl e)
         {
             Debug.Log(TextInput.Content);
         }
