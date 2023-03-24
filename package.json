@@ -22,8 +22,5 @@
     "type": "git",
     "url": "",
     "directory": "com.zknight.zxmlui"
-  },
-  "dependencies": {
-    "com.zknight.zxmlui": ""
   }
 }
