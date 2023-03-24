@@ -1,0 +1,2 @@
+- 修复BUG
+  - 修复不能正确读取Assembly的BUG
