@@ -1,0 +1,62 @@
+{
+  "name": "com.zknight.zxmlui",
+  "version": "1.0.0",
+  "displayName": "zxmlui",
+  "description": "This SDK can create UnityEditor ui with XML.",
+  "unity": "2022.1",
+  "keywords": [
+    "HIKKY",
+    "VketCloud",
+    "SDK"
+  ],
+  "author": {
+    "name": "HIKKY",
+    "email": "yunoda@vrhikky.com",
+    "url": "https://www.hikky.life"
+  },
+  "samples": [
+    {
+      "displayName": "Tutorial Resoureces",
+      "description": "Please import the Tutorial Resoureces before importing other tutorials",
+      "path": "Samples~/TutorialResources"
+    },
+    {
+      "displayName": "Tutorial -basic-",
+      "description": "Basic tutorials. ",
+      "path": "Samples~/Tutorial -basic-"
+    },
+    {
+      "displayName": "Tutorial -action-",
+      "description": "Action tutorials. ",
+      "path": "Samples~/Tutorial -action-"
+    },
+    {
+      "displayName": "Tutorial -avatar-",
+      "description": "Avatar tutorials. ",
+      "path": "Samples~/Tutorial -avatar-"
+    },
+    {
+      "displayName": "Tutorial -animation-",
+      "description": "Animation tutorials. ",
+      "path": "Samples~/Tutorial -animation-"
+    },
+    {
+      "displayName": "Tutorial -particle-",
+      "description": "Particle tutorials. ",
+      "path": "Samples~/Tutorial -particle-"
+    },
+    {
+      "displayName": "Tutorial -shading-",
+      "description": "Shading tutorials. ",
+      "path": "Samples~/Tutorial -shading-"
+    }
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VRHIKKY/VketCloudSDK.git",
+    "directory": "com.hikky.vketcloudsdk"
+  }
+}
