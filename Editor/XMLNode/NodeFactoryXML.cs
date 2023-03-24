@@ -73,7 +73,11 @@ namespace ZKnight.ZXMLui
             {
                 try
                 {
-                    EditorControl subCtrl = Activator.CreateInstance(typeof(IEditorControl).Assembly.GetType(node.Name)) as EditorControl;
+                    if (!AssemblyHelper.TryGetType(node.Name, out var createdType))
+                    {
+                        throw new ArgumentException($"Cant find type:{node.Name}");
+                    }
+                    EditorControl subCtrl = Activator.CreateInstance(createdType) as EditorControl;
                     subCtrl.SetParent(parent);
                     InitControl(subCtrl);
                     AttributeDeserialize(node, subCtrl, root);
