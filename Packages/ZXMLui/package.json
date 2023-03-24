@@ -1,6 +1,6 @@
 {
   "name": "com.zknight.zxmlui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "zxmlui",
   "description": "This SDK can create UnityEditor ui with XML.",
   "unity": "2022.1",
