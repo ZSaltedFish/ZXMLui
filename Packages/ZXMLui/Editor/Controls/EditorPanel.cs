@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace ZKnight.UnityXMLui
+namespace ZKnight.ZXMLui
 {
     public class EditorPanel : EditorControl
     {

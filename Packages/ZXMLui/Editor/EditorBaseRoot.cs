@@ -1,4 +1,4 @@
-﻿namespace ZKnight.UnityXMLui
+﻿namespace ZKnight.ZXMLui
 {
     public sealed class EditorBaseRoot : EditorControl
     {
