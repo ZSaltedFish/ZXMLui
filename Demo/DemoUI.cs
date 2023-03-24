@@ -1,19 +1,30 @@
+using UnityEditor;
 using UnityEngine;
 
-namespace ZKnight.UnityXMLui
+namespace ZKnight.ZXMLui
 {
-    public class DemoUI : MonoBehaviour
+    public class DemoUI : EditorControlDialog
     {
-        // Start is called before the first frame update
-        void Start()
-        {
+        public override string XMLNodePath => "Packages/com.zknight.zxmlui/Demo/DemoUI.xml";
 
+        public EditorText TextInput;
+        public EditorButton ClickBtn;
+        
+        public void OnBtnClick(EditorButton e)
+        {
+            Debug.Log(TextInput.Content);
         }
 
-        // Update is called once per frame
-        void Update()
+        public void ClickBtn_OnBtnClick(EditorButton e)
         {
+            Debug.Log(TextInput.Content);
+        }
 
+        [MenuItem("ZXMLui/Demo UI")]
+        public static void Init()
+        {
+            var window = GetWindow<DemoUI>();
+            window.Show();
         }
     }
 }
