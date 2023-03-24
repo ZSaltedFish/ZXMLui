@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ZKnight.UnityXMLui
+namespace ZKnight.ZXMLui
 {
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = true, Inherited = false)]
     public class XMLNodeAttribute : Attribute
