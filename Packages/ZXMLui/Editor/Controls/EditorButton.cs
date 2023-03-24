@@ -8,7 +8,7 @@ namespace ZKnight.ZXMLui
         private Texture2D _bg;
         private Rect _localSize;
 
-        public Action<EditorButton> OnBtnClick;
+        public event Action<EditorButton> OnBtnClick;
 
         private FontStyle _fontStyle = FontStyle.Normal;
         private bool _richText = true;
