@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace ZKnight.UnityXMLui
+namespace ZKnight.ZXMLui
 {
     [Serializable]
     public abstract class EditorControl : IEditorControl, IEditorSeletable, IEditorSize

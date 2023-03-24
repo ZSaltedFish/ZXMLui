@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-namespace ZKnight.UnityXMLui
+namespace ZKnight.ZXMLui
 {
     public abstract class EditorControlDialog : EditorWindow, IEditorControl
     {

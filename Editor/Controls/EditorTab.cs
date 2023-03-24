@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ZKnight.UnityXMLui
+namespace ZKnight.ZXMLui
 {
     public class EditorTab : EditorControl
     {
