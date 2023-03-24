@@ -14,9 +14,7 @@
     "email": "a263382008@gmail.com",
     "url": ""
   },
-  "samples": [
-    
-  ],
+  "samples": [],
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
@@ -24,5 +22,8 @@
     "type": "git",
     "url": "",
     "directory": "com.zknight.zxmlui"
+  },
+  "dependencies": {
+    "com.zknight.zxmlui": ""
   }
 }

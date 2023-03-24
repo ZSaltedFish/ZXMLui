@@ -1,0 +1,16 @@
+{
+    "name": "ZKnight.ZXMLui.Demo",
+    "rootNamespace": "",
+    "references": [
+        "GUID:0105a76d32e8023498594335437973ec"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

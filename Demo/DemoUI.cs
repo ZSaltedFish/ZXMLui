@@ -1,7 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace ZKnight.ZXMLui
+namespace ZKnight.ZXMLui.Demo
 {
     public class DemoUI : EditorControlDialog
     {
