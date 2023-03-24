@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ZKnight.UnityXMLui
+namespace ZKnight.ZXMLui
 {
     public class UnityEditorControl : EditorControl
     {

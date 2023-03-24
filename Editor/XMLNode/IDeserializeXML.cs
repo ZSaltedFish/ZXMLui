@@ -1,6 +1,6 @@
 ﻿using System.Xml;
 
-namespace ZKnight.UnityXMLui
+namespace ZKnight.ZXMLui
 {
     public interface IDeserializeXML
     {

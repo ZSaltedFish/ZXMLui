@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace ZKnight.UnityXMLui
+namespace ZKnight.ZXMLui
 {
     public class EditorText : EditorControl
     {
