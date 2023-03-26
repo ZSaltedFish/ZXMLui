@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace ZKnight.ZXMLui
 {
@@ -14,7 +15,6 @@ namespace ZKnight.ZXMLui
         public List<Action<EditorControlDialog>> OnWindowLostFocus = new List<Action<EditorControlDialog>>();
 
         private EditorBaseRoot _baseRoot;
-
         public string XmlPath = string.Empty;
         public virtual string XMLNodePath => XmlPath;
         public void Awake()
@@ -28,6 +28,12 @@ namespace ZKnight.ZXMLui
         public virtual void Start() { }
         public void OnGUI()
         {
+            if (_baseRoot == null)
+            {
+                OnDllReloaded();
+                return;
+            }
+
             List<IEditorControl> foreachList = new List<IEditorControl>(_baseRoot.FirstChildrenList);
             foreach (IEditorControl c in foreachList)
             {
@@ -184,5 +190,13 @@ namespace ZKnight.ZXMLui
         {
             return pos - position.position;
         }
+        #region DLL Reload Event
+        public virtual void OnDllReloaded() { }
+        public void ReloadGUI()
+        {
+            Awake();
+        }
+
+        #endregion
     }
 }
