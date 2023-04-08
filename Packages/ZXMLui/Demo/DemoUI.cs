@@ -26,7 +26,7 @@ namespace ZKnight.ZXMLui.Demo
 
         }
 
-        [MenuItem("ZXMLui/Demo UI")]
+        //[MenuItem("ZXMLui/Demo UI")]
         public static void Init()
         {
             var window = GetWindow<DemoUI>();
