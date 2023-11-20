@@ -49,7 +49,6 @@ namespace ZKnight.ZXMLui
                 var textAsset = ctrl.ReferenceXML;
                 if (textAsset == null)
                 {
-                    Debug.Log("Get XML From Path:" + ctrl.XMLNodePath);
                     string path = ctrl.XMLNodePath;
                     textAsset = AssetDatabase.LoadAssetAtPath<UnityEngine.TextAsset>(path);
                 }
