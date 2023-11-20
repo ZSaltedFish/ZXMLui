@@ -15,6 +15,8 @@ namespace ZKnight.ZXMLui
             }
         }
 
+        public TextAsset XML;
+        public TextAsset ReferenceXML => XML;
         private static long ID_GEN = 0;
         protected long ID { get; private set; }
 

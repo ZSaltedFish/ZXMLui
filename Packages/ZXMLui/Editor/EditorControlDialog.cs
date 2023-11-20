@@ -8,6 +8,8 @@ namespace ZKnight.ZXMLui
 {
     public abstract class EditorControlDialog : EditorWindow, IEditorControl
     {
+        public TextAsset XML;
+
         public List<Action<IEditorControl>> OnAddChild = new List<Action<IEditorControl>>();
         public List<Action<IEditorControl>> OnRemoveChild = new List<Action<IEditorControl>>();
 
@@ -16,6 +18,7 @@ namespace ZKnight.ZXMLui
 
         private EditorBaseRoot _baseRoot;
         public string XmlPath = string.Empty;
+        public TextAsset ReferenceXML => XML;
         public virtual string XMLNodePath => XmlPath;
         public void Awake()
         {

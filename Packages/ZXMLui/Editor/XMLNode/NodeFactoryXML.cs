@@ -4,6 +4,7 @@ using System.Reflection;
 using System.Xml;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
 
 namespace ZKnight.ZXMLui
 {
@@ -43,18 +44,23 @@ namespace ZKnight.ZXMLui
         public static void InitControl(IEditorControl ctrl)
         {
             Type type = ctrl.GetType();
-            string path = ctrl.XMLNodePath;
             try
             {
-                TextAsset ass = AssetDatabase.LoadAssetAtPath<TextAsset>(path);
-                if (ass == null)
+                var textAsset = ctrl.ReferenceXML;
+                if (textAsset == null)
+                {
+                    Debug.Log("Get XML From Path:" + ctrl.XMLNodePath);
+                    string path = ctrl.XMLNodePath;
+                    textAsset = AssetDatabase.LoadAssetAtPath<UnityEngine.TextAsset>(path);
+                }
+                if (textAsset == null)
                 {
                     (ctrl as EditorControl)?.InitFinish();
                     return;
                 }
 
                 XmlDocument doc = new XmlDocument();
-                doc.LoadXml(ass.text);
+                doc.LoadXml(textAsset.text);
 
                 XmlNode root = doc.ChildNodes[0];
                 TreeDeserialize(ctrl, root, ctrl);

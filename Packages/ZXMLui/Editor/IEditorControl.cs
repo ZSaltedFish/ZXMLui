@@ -11,6 +11,7 @@ namespace ZKnight.ZXMLui
         IEditorControl Root { get; set; }
         string Name { get; }
         void Dispose();
+        TextAsset ReferenceXML { get; }
 
         void ExcuteChildAdded(IEditorControl e);
         void ExcuteChildRemove(IEditorControl e);
