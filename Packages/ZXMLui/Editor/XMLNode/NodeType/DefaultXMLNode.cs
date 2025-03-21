@@ -20,6 +20,10 @@ namespace ZKnight.ZXMLui
             {
                 return double.Parse(value);
             }
+            if (type == typeof(bool))
+            {
+                return bool.Parse(value);
+            }
             if (type == typeof(Color))
             {
                 float r = Convert.ToInt32(value.Substring(0, 2), 16) / (float)byte.MaxValue;
