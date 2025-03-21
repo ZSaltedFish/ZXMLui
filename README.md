@@ -14,5 +14,5 @@ Please refer to the sample class `ZKnight.ZXMLui.Demo.DemoUI` for a basic usage 
 ## Documentation
 
 - [English](README_EN.md)
-- [简体中文](README.md)
+- [简体中文](README_CN.md)
 - [日本語](README_JP.md)
