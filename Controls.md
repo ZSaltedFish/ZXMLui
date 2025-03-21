@@ -4,12 +4,14 @@ This document lists all currently supported controls in ZXMLui and their availab
 
 ## Common Attributes (Applicable to All Controls)
 
-| Attribute | Type   | Description                          | Example                          |
-|-----------|--------|--------------------------------------|----------------------------------|
-| Name      | string | Control name, used for field binding | `Name="MyButton"`               |
-| Content   | string | Display text for buttons, labels, etc.| `Content="Click Me"`            |
-| Position  | string | Position in `x,y` format              | `Position="10,20"`              |
-| Size      | string | Size in `width,height` format         | `Size="200,40"`                 |
+| Attribute | Type   | Description                                        | Example                             |
+|----------|--------|----------------------------------------------------|-------------------------------------|
+| Name     | string | Control name, used for field binding               | `Name="MyControl"`                  |
+| Content  | string | Display text, for controls that support text       | `Content="Click Me"`                |
+| Position | string | Control position, format: `x,y`                    | `Position="10,20"`                  |
+| Size     | string | Control size, format: `width,height`               | `Size="200,40"`                     |
+| Anchor   | string | Anchoring, comma-separated (e.g., `Left,Top,Right`)| `Anchor="Left,Top,Right"`           |
+| Margin   | string | Margin, format: `left,top,right,bottom`            | `Margin="0,0,0,0"`                  |
 
 ---
 
@@ -41,11 +43,10 @@ Used as a container for layout and grouping. Can be nested. No visual appearance
 
 ## ZKnight.ZXMLui.EditorImage
 
-Used to display a static image.
-
-| Attribute | Type   | Description                            | Example                                   |
-|-----------|--------|----------------------------------------|-------------------------------------------|
-| Bg        | string | Image path (e.g. `Assets/Textures/...`) | `Bg="Assets/Textures/sample_icon.png"`    |
+| Attribute       | Type   | Description                                            | Example                                                           |
+|-----------------|--------|--------------------------------------------------------|-------------------------------------------------------------------|
+| Bg              | string | Path to the image resource                             | `Bg="Packages/com.zknight.uflowchart/Resources/MeshBg.png"`       |
+| ImageScaleMode  | string | Image scaling mode. Options: `Tile`, `Stretch`, etc.   | `ImageScaleMode="Tile"`                                           |
 
 ---
 
