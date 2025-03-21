@@ -4,12 +4,14 @@
 
 ## 通用属性（适用于所有控件）
 
-| 属性名    | 类型     | 说明                           | 示例                             |
-|-----------|----------|--------------------------------|----------------------------------|
-| Name      | string   | 控件名称，用于字段自动绑定     | `Name="MyButton"`               |
-| Content   | string   | 显示内容，用于按钮、标签等     | `Content="Click Me"`            |
-| Position  | string   | 坐标，格式为 `x,y`             | `Position="10,20"`              |
-| Size      | string   | 尺寸，格式为 `width,height`    | `Size="200,40"`                 |
+| 属性名   | 类型   | 说明                                        | 示例                                |
+|----------|--------|---------------------------------------------|-------------------------------------|
+| Name     | string | 控件名称，用于字段绑定                      | `Name="MyControl"`                  |
+| Content  | string | 显示内容，适用于支持文本的控件              | `Content="Click Me"`                |
+| Position | string | 控件位置，格式为 `x,y`                      | `Position="10,20"`                  |
+| Size     | string | 控件大小，格式为 `width,height`             | `Size="200,40"`                     |
+| Anchor   | string | 对齐方式，逗号分隔（如 `Left,Top,Right`）   | `Anchor="Left,Top,Right"`           |
+| Margin   | string | 边距，格式为 `left,top,right,bottom`        | `Margin="0,0,0,0"`                  |
 
 ---
 ## ZKnight.ZXMLui.EditorPanel
@@ -40,12 +42,16 @@
 
 ## ZKnight.ZXMLui.EditorImage
 
-用于显示一张图片。
+| 属性名        | 类型   | 说明                                  | 示例                                                           |
+|---------------|--------|---------------------------------------|----------------------------------------------------------------|
+| Bg            | string | 图片资源路径                          | `Bg="Packages/com.zknight.uflowchart/Resources/MeshBg.png"`    |
+| ImageScaleMode| string | 图片缩放模式（如 `Tile`、`Stretch`）  | `ImageScaleMode="Tile"`                                        |
 
-| 属性名 | 类型   | 说明                                    | 示例                                     |
-|--------|--------|-----------------------------------------|------------------------------------------|
-| Bg     | string | 图片资源路径（如 `Assets/Textures/...`）| `Bg="Assets/Textures/sample_icon.png"`   |
+## ZKnight.ZXMLui.EditorToggle
 
+| 属性名 | 类型  | 说明                        | 示例                          |
+|--------|-------|-----------------------------|-------------------------------|
+| IsOn   | bool  | 是否默认开启，`true` 或 `false`（默认 `false`） | `IsOn="true"`   
 
 ---
 
