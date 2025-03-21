@@ -12,23 +12,40 @@
 | Size      | string   | 尺寸，格式为 `width,height`    | `Size="200,40"`                 |
 
 ---
+## ZKnight.ZXMLui.EditorPanel
 
-## EditorText
+用于布局、包裹其他控件的空容器控件。可嵌套使用，无视觉样式。
 
-| 属性名         | 类型     | 说明                               | 示例                                     |
-|----------------|----------|------------------------------------|------------------------------------------|
-| RichText       | bool     | 是否启用富文本（默认 `false`）     | `RichText="true"`                        |
-| FontSize       | int      | 文本字号                           | `FontSize="14"`                          |
-| Color          | string   | 文本颜色，格式 `r,g,b,a`           | `Color="255,0,0,255"`                    |
-| OnContentChange| string   | 文本变化回调，函数需带一个参数     | `OnContentChange="OnTextChanged"`       |
+## ZKnight.ZXMLui.EditorText
+
+| 属性名         | 类型     | 说明                                           | 示例                                     |
+|----------------|----------|------------------------------------------------|------------------------------------------|
+| RichText       | bool     | 是否启用富文本（默认 `false`）                 | `RichText="true"`                        |
+| FontSize       | int      | 文本字号                                    | `FontSize="14"`                          |
+| Color          | string   | 文本颜色，**仅支持 RGB 十六进制**（如 `FFFFFF`）| `Color="FF0000"`                          |
+| OnContentChange| string   | 文本变化回调方法名                            | `OnContentChange="OnTextChanged"`        |
 
 ---
 
-## EditorButton
+## ZKnight.ZXMLui.EditorButton
 
-| 属性名    | 类型     | 说明                           | 示例                             |
-|-----------|----------|--------------------------------|----------------------------------|
-| OnClick   | string   | 点击时调用的函数名             | `OnClick="OnClickHandler"`       |
+| 属性名        | 类型     | 说明                                           | 示例                                       |
+|---------------|----------|------------------------------------------------|--------------------------------------------|
+| OnBtnClick    | string   | 点击按钮时调用的函数名                         | `OnBtnClick="OnClickHandler"`              |
+| RichText      | bool     | 是否启用富文本（默认 `false`）                 | `RichText="true"`                          |
+| FontSize      | int      | 文本字号                                       | `FontSize="16"`                            |
+| Bg            | string   | 背景贴图路径（如 `Assets/Textures/...`）       | `Bg="Assets/Textures/button_bg.png"`       |
+| Hover         | string   | 悬停贴图路径                                   | `Hover="Assets/Textures/button_hover.png"` |
+| ContentColor  | string   | 文本颜色，**仅支持 RGB 十六进制**（如 `FFFFFF`）| `ContentColor="FFCC00"`                    |
+
+## ZKnight.ZXMLui.EditorImage
+
+用于显示一张图片。
+
+| 属性名 | 类型   | 说明                                    | 示例                                     |
+|--------|--------|-----------------------------------------|------------------------------------------|
+| Bg     | string | 图片资源路径（如 `Assets/Textures/...`）| `Bg="Assets/Textures/sample_icon.png"`   |
+
 
 ---
 
