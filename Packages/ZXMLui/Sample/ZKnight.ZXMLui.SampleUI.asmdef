@@ -1,5 +1,5 @@
 {
-    "name": "ZKnight.ZXMLui.Demo",
+    "name": "ZKnight.ZXMLui.SampleUI",
     "rootNamespace": "",
     "references": [
         "GUID:0105a76d32e8023498594335437973ec"
