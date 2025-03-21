@@ -33,4 +33,7 @@ https://github.com/ZSaltedFish/ZXMLui.git?path=Packages/ZXMLui
 - `EditorButton` 是一个按钮控件，点击后会读取当前 `EditorText` 中的内容，并在控制台输出该文本。
 里面包含两个简单的控件，`EditorButton`与`EditorText`，实现功能为编辑Text中的文字，点击按钮可以在控制台上打印对应的LOG。
 
+## 控件参考
+[Controls](Controls.md)
+
 
